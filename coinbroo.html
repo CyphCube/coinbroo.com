@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coinbroo</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0e14;
+    color: #e8edf3;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 48px;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #e8edf3;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+  }
+
+  .logo-mark {
+    width: 26px; height: 26px;
+    background: #00e5b3;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 800; color: #0a0e14;
+  }
+
+  .nav-right {
+    display: flex; align-items: center; gap: 28px;
+  }
+
+  .nav-right a {
+    color: #6b7a8d;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .nav-right a:hover { color: #e8edf3; }
+
+  .hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 24px 80px;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px; height: 500px;
+    background: radial-gradient(ellipse, rgba(0,229,179,0.07) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  h1 {
+    font-size: clamp(52px, 9vw, 110px);
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -3px;
+    color: #e8edf3;
+    margin-bottom: 40px;
+  }
+
+  h1 em {
+    font-style: normal;
+    color: #00e5b3;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #00e5b3;
+    color: #0a0e14;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    transition: opacity 0.2s;
+  }
+
+  .cta:hover { opacity: 0.85; }
+
+  .cta svg { width: 16px; height: 16px; }
+
+  .tagline {
+    font-size: 16px;
+    color: #6b7a8d;
+    letter-spacing: 0.01em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #6b7a8d;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-mark">C</div>
+    Coinbroo
+  </div>
+
+</nav>
+
+<section class="hero">
+  <h1>Trade <em>anything</em>,<br>anytime.</h1>
+  <a href="https://app.coinbroo.com/" class="cta">
+    Trade now
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M3 8h10M9 4l4 4-4 4"/>
+    </svg>
+  </a>
+  <p class="tagline">Real-time access to global markets — 24/7 liquidity, pro tools, no gatekeepers.</p>
+</section>
+
+<footer>coinbroo ©2026</footer>
+
+</body>
+</html>
