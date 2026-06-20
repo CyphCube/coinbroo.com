@@ -57,13 +57,18 @@ Defined in `app.coinbroo.com` `tailwind.config.js`:
 The two projects are separate stacks, so each keeps its own declaration of the
 brand color. Keep them in sync with the values above.
 
-| Project | Stack | Canonical location |
-|---|---|---|
-| `coinbroo.com` (landing) | Static HTML/CSS | `:root` CSS variables in `index.html` (`--brand`, `--brand-rgb`, `--brand-hover`) |
-| `app.coinbroo.com` (app) | Next.js + Tailwind | `theme.extend.colors.accent` in `tailwind.config.js` (`blue`, `blue-dim`) |
+| Project | Stack | Canonical location | Accent token = hex | Hover token = hex |
+|---|---|---|---|---|
+| `coinbroo.com` (landing) | Static HTML/CSS | `:root` CSS variables in `index.html` | `--brand` = `#1EBCAD` | `--brand-hover` = `#179C8F` |
+| `app.coinbroo.com` (app) | Next.js + Tailwind | `theme.extend.colors.accent` in `tailwind.config.js` | `accent.blue` = `#1EBCAD` | `accent.blue-dim` = `#179C8F` |
 
-> Note: the Tailwind token is named `accent.blue` for historical reasons — it
-> is actually the teal accent, not blue.
+> **Note 1:** the Tailwind token is named `accent.blue` for historical reasons —
+> it is actually the teal accent, not blue.
+>
+> **Note 2:** do **not** confuse `accent.blue-dim` (`#179C8F`, the teal hover)
+> with `long-dim` (`#178A67`). `long-dim` is the dimmed **green for long/buy**
+> positions in the trading UI — a completely separate token, unrelated to the
+> brand accent, despite looking similar.
 
 ## Typography
 
