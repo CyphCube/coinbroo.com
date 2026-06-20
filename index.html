@@ -8,6 +8,11 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
+  :root {
+    --brand: #1EBCAD;
+    --brand-rgb: 30, 188, 173;
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
@@ -90,7 +95,7 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     width: 800px; height: 500px;
-    background: radial-gradient(ellipse, rgba(0,229,179,0.07) 0%, transparent 65%);
+    background: radial-gradient(ellipse, rgba(var(--brand-rgb),0.07) 0%, transparent 65%);
     pointer-events: none;
   }
 
@@ -105,14 +110,14 @@
 
   h1 em {
     font-style: normal;
-    color: #00e5b3;
+    color: var(--brand);
   }
 
   .cta {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #00e5b3;
+    background: var(--brand);
     color: #0a0e14;
     font-weight: 700;
     font-size: 15px;
