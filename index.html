@@ -21,6 +21,7 @@
     color: #e8edf3;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -148,6 +149,13 @@
     font-size: 12px;
     color: #6b7a8d;
     flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+    nav { padding: 20px 22px; }
+    .hero { padding: 0 24px 32px; }
+    h1 { margin-bottom: 32px; letter-spacing: -2px; }
+    .cta { margin-bottom: 32px; }
   }
 </style>
 </head>
