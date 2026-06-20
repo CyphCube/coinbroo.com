@@ -11,6 +11,7 @@
   :root {
     --brand: #1EBCAD;
     --brand-rgb: 30, 188, 173;
+    --brand-hover: #179C8F;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -127,10 +128,10 @@
     border-radius: 8px;
     text-decoration: none;
     margin-bottom: 40px;
-    transition: opacity 0.2s;
+    transition: background 0.2s;
   }
 
-  .cta:hover { opacity: 0.85; }
+  .cta:hover { background: var(--brand-hover); }
 
   .cta svg { width: 16px; height: 16px; }
 
